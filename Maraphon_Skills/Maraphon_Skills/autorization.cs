@@ -12,14 +12,13 @@ namespace Maraphon_Skills
 {
     public partial class autorization : Form
     {
-        
         SqlConnection database;
         /// <summary>
         /// подключение базы данных
         /// </summary>
         public autorization()
         {
-           
+
             InitializeComponent();
 
             database = new SqlConnection(@"Data Source=LENOVO-PC\MSSQLSERVER01; Initial Catalog = ws; Integrated Security = True");
@@ -66,14 +65,14 @@ namespace Maraphon_Skills
                     {
                         sqlread = command.ExecuteReader(); //Компиляция
                         while (sqlread.Read()) // Чтение данных по запросу
-                        {   
+                        {
                             if ((sqlread["Email"].ToString() == textBox_email.Text) && (sqlread["password"].ToString() == textBox_password.Text) && sqlread["RoleId"].ToString() == "R")
                             {
-                            runner_menu rm = new runner_menu();
-                            rm.mail = textBox_email.ToString();
-                            this.Hide();
+
+                                runner_menu rm = new runner_menu();
+                                this.Hide();
                                 rm.Show();
-                                break; 
+                                break;
                                 
                             }
                             else 

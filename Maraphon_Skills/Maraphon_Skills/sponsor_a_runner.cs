@@ -412,7 +412,60 @@ namespace Maraphon_Skills
             }
         }
 
-     
+        private void panel_2_sar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void time_to_start_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_CVC_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void info_about_sponsor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void date_card_calendar_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_date_card_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_number_card_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_card_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_runner_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_name_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

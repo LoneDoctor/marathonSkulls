@@ -83,6 +83,7 @@
             this.panel_2_sar.Name = "panel_2_sar";
             this.panel_2_sar.Size = new System.Drawing.Size(1423, 68);
             this.panel_2_sar.TabIndex = 1;
+            this.panel_2_sar.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_2_sar_Paint);
             // 
             // time_to_start
             // 
@@ -95,6 +96,7 @@
             this.time_to_start.TabIndex = 4;
             this.time_to_start.Text = "Время до старта";
             this.time_to_start.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.time_to_start.Click += new System.EventHandler(this.time_to_start_Click);
             // 
             // timer_date
             // 
@@ -147,6 +149,7 @@
             this.label_name.Size = new System.Drawing.Size(152, 40);
             this.label_name.TabIndex = 3;
             this.label_name.Text = "Ваше имя:";
+            this.label_name.Click += new System.EventHandler(this.label_name_Click);
             // 
             // label_runner
             // 
@@ -160,6 +163,7 @@
             this.label_runner.Size = new System.Drawing.Size(97, 40);
             this.label_runner.TabIndex = 4;
             this.label_runner.Text = "Бегун:";
+            this.label_runner.Click += new System.EventHandler(this.label_runner_Click);
             // 
             // label_card
             // 
@@ -173,6 +177,7 @@
             this.label_card.Size = new System.Drawing.Size(234, 40);
             this.label_card.TabIndex = 5;
             this.label_card.Text = "Владелец карты:";
+            this.label_card.Click += new System.EventHandler(this.label_card_Click);
             // 
             // textBox_name
             // 
@@ -213,6 +218,7 @@
             this.label_number_card.Size = new System.Drawing.Size(191, 40);
             this.label_number_card.TabIndex = 9;
             this.label_number_card.Text = "Номер карты:";
+            this.label_number_card.Click += new System.EventHandler(this.label_number_card_Click);
             // 
             // label_date_card
             // 
@@ -226,6 +232,7 @@
             this.label_date_card.Size = new System.Drawing.Size(211, 40);
             this.label_date_card.TabIndex = 10;
             this.label_date_card.Text = "Срок действия:";
+            this.label_date_card.Click += new System.EventHandler(this.label_date_card_Click);
             // 
             // date_card_calendar
             // 
@@ -234,6 +241,7 @@
             this.date_card_calendar.Name = "date_card_calendar";
             this.date_card_calendar.Size = new System.Drawing.Size(321, 39);
             this.date_card_calendar.TabIndex = 11;
+            this.date_card_calendar.ValueChanged += new System.EventHandler(this.date_card_calendar_ValueChanged);
             // 
             // info_about_sponsor
             // 
@@ -245,6 +253,7 @@
             this.info_about_sponsor.Size = new System.Drawing.Size(427, 38);
             this.info_about_sponsor.TabIndex = 12;
             this.info_about_sponsor.Text = "Информация о Спонсоре";
+            this.info_about_sponsor.Click += new System.EventHandler(this.info_about_sponsor_Click);
             // 
             // label_CVC
             // 
@@ -258,6 +267,7 @@
             this.label_CVC.Size = new System.Drawing.Size(83, 40);
             this.label_CVC.TabIndex = 13;
             this.label_CVC.Text = "CVC:";
+            this.label_CVC.Click += new System.EventHandler(this.label_CVC_Click);
             // 
             // textBox_number
             // 
@@ -325,7 +335,7 @@
             this.summ_for_pay.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.summ_for_pay.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.summ_for_pay.Location = new System.Drawing.Point(988, 545);
-            this.summ_for_pay.MaxLength = 5;
+            this.summ_for_pay.MaxLength = 10;
             this.summ_for_pay.Name = "summ_for_pay";
             this.summ_for_pay.Size = new System.Drawing.Size(100, 38);
             this.summ_for_pay.TabIndex = 20;
@@ -388,7 +398,7 @@
             this.panel1.Controls.Add(this.fond_information);
             this.panel1.Controls.Add(this.fond_name);
             this.panel1.Controls.Add(this.fond_label);
-            this.panel1.Location = new System.Drawing.Point(797, 283);
+            this.panel1.Location = new System.Drawing.Point(455, 175);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(590, 432);
             this.panel1.TabIndex = 25;
@@ -441,7 +451,7 @@
             this.comboBox_runner.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.comboBox_runner.Location = new System.Drawing.Point(293, 433);
             this.comboBox_runner.Name = "comboBox_runner";
-            this.comboBox_runner.Size = new System.Drawing.Size(477, 39);
+            this.comboBox_runner.Size = new System.Drawing.Size(321, 39);
             this.comboBox_runner.Sorted = true;
             this.comboBox_runner.TabIndex = 26;
             this.comboBox_runner.SelectedIndexChanged += new System.EventHandler(this.comboBox_runner_SelectedIndexChanged);
@@ -453,6 +463,7 @@
             this.textBox1.Size = new System.Drawing.Size(488, 22);
             this.textBox1.TabIndex = 27;
             this.textBox1.Visible = false;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 

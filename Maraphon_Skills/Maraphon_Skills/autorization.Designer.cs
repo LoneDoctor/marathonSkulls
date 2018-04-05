@@ -225,7 +225,7 @@
         private System.Windows.Forms.Panel panel_2_sar;
         private System.Windows.Forms.Label auto_info;
         private System.Windows.Forms.Label auto_panel;
-        public System.Windows.Forms.TextBox textBox_email;
+        private System.Windows.Forms.TextBox textBox_email;
         private System.Windows.Forms.TextBox textBox_password;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

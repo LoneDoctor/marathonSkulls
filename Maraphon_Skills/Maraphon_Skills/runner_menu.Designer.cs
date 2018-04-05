@@ -42,18 +42,6 @@
             this.time_to_start = new System.Windows.Forms.Label();
             this.panel_2_sar = new System.Windows.Forms.Panel();
             this.contact_panel = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.email_panel_2 = new System.Windows.Forms.Label();
             this.phone_label_2 = new System.Windows.Forms.Label();
             this.email_label = new System.Windows.Forms.Label();
@@ -62,18 +50,30 @@
             this.contact_label_2 = new System.Windows.Forms.Label();
             this.close_contacts = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
             this.panel_1_sar.SuspendLayout();
             this.panel_2_sar.SuspendLayout();
             this.contact_panel.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.close_contacts)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.close_contacts)).BeginInit();
+            this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
             // return_to_start
@@ -127,7 +127,6 @@
             this.my_results.TabIndex = 36;
             this.my_results.Text = "Мои результаты";
             this.my_results.UseVisualStyleBackColor = true;
-            this.my_results.Click += new System.EventHandler(this.my_results_Click);
             // 
             // registration_to_marathon
             // 
@@ -219,115 +218,11 @@
             this.contact_panel.Controls.Add(this.contact_information);
             this.contact_panel.Controls.Add(this.contact_label_2);
             this.contact_panel.Controls.Add(this.close_contacts);
-            this.contact_panel.Location = new System.Drawing.Point(875, 486);
+            this.contact_panel.Location = new System.Drawing.Point(395, 125);
             this.contact_panel.Name = "contact_panel";
             this.contact_panel.Size = new System.Drawing.Size(637, 415);
             this.contact_panel.TabIndex = 40;
             this.contact_panel.Visible = false;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel10.Controls.Add(this.panel11);
-            this.panel10.Location = new System.Drawing.Point(6, 3);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(630, 10);
-            this.panel10.TabIndex = 45;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel11.Controls.Add(this.panel12);
-            this.panel11.Location = new System.Drawing.Point(3, 402);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(637, 10);
-            this.panel11.TabIndex = 41;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel12.Location = new System.Drawing.Point(60, 48);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(200, 100);
-            this.panel12.TabIndex = 42;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel7.Controls.Add(this.panel8);
-            this.panel7.Location = new System.Drawing.Point(6, 404);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(628, 10);
-            this.panel7.TabIndex = 44;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel8.Controls.Add(this.panel9);
-            this.panel8.Location = new System.Drawing.Point(3, 402);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(637, 10);
-            this.panel8.TabIndex = 41;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel9.Location = new System.Drawing.Point(60, 48);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(200, 100);
-            this.panel9.TabIndex = 42;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Location = new System.Drawing.Point(627, 9);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(10, 408);
-            this.panel4.TabIndex = 43;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel5.Controls.Add(this.panel6);
-            this.panel5.Location = new System.Drawing.Point(3, 402);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(637, 10);
-            this.panel5.TabIndex = 41;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel6.Location = new System.Drawing.Point(60, 48);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(200, 100);
-            this.panel6.TabIndex = 42;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel3.Controls.Add(this.panel1);
-            this.panel3.Location = new System.Drawing.Point(0, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(10, 414);
-            this.panel3.TabIndex = 42;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(3, 402);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(637, 10);
-            this.panel1.TabIndex = 41;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel2.Location = new System.Drawing.Point(60, 48);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 100);
-            this.panel2.TabIndex = 42;
             // 
             // email_panel_2
             // 
@@ -410,6 +305,110 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Location = new System.Drawing.Point(3, 402);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(637, 10);
+            this.panel1.TabIndex = 41;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel2.Location = new System.Drawing.Point(60, 48);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 100);
+            this.panel2.TabIndex = 42;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel3.Controls.Add(this.panel1);
+            this.panel3.Location = new System.Drawing.Point(0, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(10, 414);
+            this.panel3.TabIndex = 42;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Location = new System.Drawing.Point(627, 9);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(10, 408);
+            this.panel4.TabIndex = 43;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel5.Controls.Add(this.panel6);
+            this.panel5.Location = new System.Drawing.Point(3, 402);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(637, 10);
+            this.panel5.TabIndex = 41;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel6.Location = new System.Drawing.Point(60, 48);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(200, 100);
+            this.panel6.TabIndex = 42;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel7.Controls.Add(this.panel8);
+            this.panel7.Location = new System.Drawing.Point(6, 404);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(628, 10);
+            this.panel7.TabIndex = 44;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel8.Controls.Add(this.panel9);
+            this.panel8.Location = new System.Drawing.Point(3, 402);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(637, 10);
+            this.panel8.TabIndex = 41;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel9.Location = new System.Drawing.Point(60, 48);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(200, 100);
+            this.panel9.TabIndex = 42;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel10.Controls.Add(this.panel11);
+            this.panel10.Location = new System.Drawing.Point(6, 3);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(630, 10);
+            this.panel10.TabIndex = 45;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel11.Controls.Add(this.panel12);
+            this.panel11.Location = new System.Drawing.Point(3, 402);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(637, 10);
+            this.panel11.TabIndex = 41;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel12.Location = new System.Drawing.Point(60, 48);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(200, 100);
+            this.panel12.TabIndex = 42;
+            // 
             // runner_menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -433,15 +432,15 @@
             this.panel_2_sar.PerformLayout();
             this.contact_panel.ResumeLayout(false);
             this.contact_panel.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.close_contacts)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.close_contacts)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

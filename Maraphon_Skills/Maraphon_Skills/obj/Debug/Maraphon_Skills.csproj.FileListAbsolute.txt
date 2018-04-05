@@ -17,9 +17,6 @@ C:\Users\lenovo\Desktop\программа марафон\Maraphon_Skills\Maraph
 C:\Users\lenovo\Desktop\программа марафон\Maraphon_Skills\Maraphon_Skills\obj\Debug\Maraphon_Skills.pdb
 C:\Users\lenovo\Desktop\программа марафон\Maraphon_Skills\Maraphon_Skills\obj\Debug\Maraphon_Skills.csprojResolveAssemblyReference.cache
 C:\Users\lenovo\Desktop\программа марафон\Maraphon_Skills\Maraphon_Skills\obj\Debug\Maraphon_Skills.Runner_choise.resources
-C:\Users\lenovo\Desktop\программа марафон\Maraphon_Skills\Maraphon_Skills\obj\Debug\Maraphon_Skills.registration_to_marathon.resources
-C:\Users\lenovo\Desktop\программа марафон\Maraphon_Skills\Maraphon_Skills\obj\Debug\Maraphon_Skills.confirmation_of_marathon.resources
-C:\Users\lenovo\Desktop\программа марафон\Maraphon_Skills\Maraphon_Skills\obj\Debug\Maraphon_Skills.info.resources
-C:\Users\lenovo\Desktop\программа марафон\Maraphon_Skills\Maraphon_Skills\obj\Debug\Maraphon_Skills.rewriting_profile.resources
-C:\Users\lenovo\Desktop\программа марафон\Maraphon_Skills\Maraphon_Skills\obj\Debug\Maraphon_Skills.Form2.resources
-C:\Users\lenovo\Desktop\программа марафон\Maraphon_Skills\Maraphon_Skills\obj\Debug\Maraphon_Skills.csproj.ResolveComReference.cache
+C:\Users\Михаил\Desktop\Maraphon_Skills\Maraphon_Skills\bin\Debug\Maraphon_Skills.exe.config
+C:\Users\Михаил\Desktop\Maraphon_Skills\Maraphon_Skills\obj\Debug\Maraphon_Skills.exe
+C:\Users\Михаил\Desktop\Maraphon_Skills\Maraphon_Skills\obj\Debug\Maraphon_Skills.pdb

@@ -12,7 +12,6 @@ namespace Maraphon_Skills
 {
     public partial class runner_menu : Form
     {
-        public string mail;
         public runner_menu()
         {
             InitializeComponent();
@@ -82,12 +81,6 @@ namespace Maraphon_Skills
             this.Close();
             Start_m sm = new Start_m();
             sm.Show();
-        }
-
-        private void my_results_Click(object sender, EventArgs e)
-        {
-            Form2 f2 = new Form2();
-            f2.mail = mail;
         }
     }
 }

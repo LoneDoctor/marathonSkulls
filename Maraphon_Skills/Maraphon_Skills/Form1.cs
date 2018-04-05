@@ -96,17 +96,5 @@ namespace Maraphon_Skills
             Runner_choise rch = new Runner_choise();
             rch.Show();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            registration_to_marathon rtm = new registration_to_marathon();
-            rtm.Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            info inf = new info();
-            inf.Show();
-        }
     }
 }
