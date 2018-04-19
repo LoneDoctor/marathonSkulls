@@ -20,3 +20,12 @@ C:\Users\lenovo\Desktop\программа марафон\Maraphon_Skills\Maraph
 C:\Users\Михаил\Desktop\Maraphon_Skills\Maraphon_Skills\bin\Debug\Maraphon_Skills.exe.config
 C:\Users\Михаил\Desktop\Maraphon_Skills\Maraphon_Skills\obj\Debug\Maraphon_Skills.exe
 C:\Users\Михаил\Desktop\Maraphon_Skills\Maraphon_Skills\obj\Debug\Maraphon_Skills.pdb
+C:\Users\lenovo\Desktop\программа марафон\Maraphon_Skills\Maraphon_Skills\obj\Debug\Maraphon_Skills.csproj.ResolveComReference.cache
+C:\Users\lenovo\Desktop\программа марафон\Maraphon_Skills\Maraphon_Skills\obj\Debug\Maraphon_Skills.All_Result.resources
+C:\Users\lenovo\Desktop\программа марафон\Maraphon_Skills\Maraphon_Skills\obj\Debug\Maraphon_Skills.flow_of_inventory.resources
+C:\Users\lenovo\Desktop\программа марафон\Maraphon_Skills\Maraphon_Skills\obj\Debug\Maraphon_Skills.How_long.resources
+C:\Users\lenovo\Desktop\программа марафон\Maraphon_Skills\Maraphon_Skills\obj\Debug\Maraphon_Skills.inform_ms.resources
+C:\Users\lenovo\Desktop\программа марафон\Maraphon_Skills\Maraphon_Skills\obj\Debug\Maraphon_Skills.interactiveMap.resources
+C:\Users\lenovo\Desktop\программа марафон\Maraphon_Skills\Maraphon_Skills\obj\Debug\Maraphon_Skills.My_Result.resources
+C:\Users\lenovo\Desktop\программа марафон\Maraphon_Skills\Maraphon_Skills\obj\Debug\Maraphon_Skills.management_volounteres.resources
+C:\Users\lenovo\Desktop\программа марафон\Maraphon_Skills\Maraphon_Skills\obj\Debug\Maraphon_Skills.registration_marathon.resources

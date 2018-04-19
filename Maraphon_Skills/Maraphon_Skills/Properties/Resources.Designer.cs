@@ -73,9 +73,119 @@ namespace Maraphon_Skills.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _4BL4sBeVBVM {
+            get {
+                object obj = ResourceManager.GetObject("4BL4sBeVBVM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _7vECTsxnE5g {
+            get {
+                object obj = ResourceManager.GetObject("7vECTsxnE5g", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _8meTV1Jux1A {
+            get {
+                object obj = ResourceManager.GetObject("8meTV1Jux1A", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap d_dJqzaO8js {
+            get {
+                object obj = ResourceManager.GetObject("d-dJqzaO8js", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kkoKbfP94hw {
+            get {
+                object obj = ResourceManager.GetObject("kkoKbfP94hw", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LzOnLtpHIBw {
+            get {
+                object obj = ResourceManager.GetObject("LzOnLtpHIBw", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap M3FvTrO3HTI {
+            get {
+                object obj = ResourceManager.GetObject("M3FvTrO3HTI", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pW7ceN_3zbk {
+            get {
+                object obj = ResourceManager.GetObject("pW7ceN_3zbk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sign_computer_icon_symbol_signs_info_information {
             get {
                 object obj = ResourceManager.GetObject("sign-computer-icon-symbol-signs-info-information", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap YgbU6kYAr4M {
+            get {
+                object obj = ResourceManager.GetObject("YgbU6kYAr4M", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap YgbU6kYAr4M1 {
+            get {
+                object obj = ResourceManager.GetObject("YgbU6kYAr4M1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap YgbU6kYAr4M2 {
+            get {
+                object obj = ResourceManager.GetObject("YgbU6kYAr4M2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -82,5 +82,10 @@ namespace Maraphon_Skills
             Start_m sm = new Start_m();
             sm.Show();
         }
+
+        private void turning_prof_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

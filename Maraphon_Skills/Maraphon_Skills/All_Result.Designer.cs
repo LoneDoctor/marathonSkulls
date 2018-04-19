@@ -41,8 +41,18 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel_1_sar.SuspendLayout();
             this.panel_2_start.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_1_sar
@@ -85,7 +95,7 @@
             this.panel_2_start.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel_2_start.Controls.Add(this.label1);
             this.panel_2_start.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_2_start.Location = new System.Drawing.Point(0, 448);
+            this.panel_2_start.Location = new System.Drawing.Point(0, 505);
             this.panel_2_start.Margin = new System.Windows.Forms.Padding(2);
             this.panel_2_start.Name = "panel_2_start";
             this.panel_2_start.Size = new System.Drawing.Size(815, 55);
@@ -175,11 +185,104 @@
             this.label5.TabIndex = 38;
             this.label5.Text = "Пол:";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(630, 200);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 39;
+            this.button1.Text = "Поиск";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(153, 245);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.TabIndex = 41;
+            this.label7.Text = "label7";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(490, 245);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(35, 13);
+            this.label8.TabIndex = 42;
+            this.label8.Text = "label8";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(16, 240);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(120, 20);
+            this.label6.TabIndex = 44;
+            this.label6.Text = "Всего бегунов:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.Location = new System.Drawing.Point(232, 240);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(243, 20);
+            this.label10.TabIndex = 45;
+            this.label10.Text = "Всего бегунов финишировало:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label11.Location = new System.Drawing.Point(382, 201);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(93, 20);
+            this.label11.TabIndex = 46;
+            this.label11.Text = "Категория:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.Location = new System.Drawing.Point(543, 240);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(131, 20);
+            this.label9.TabIndex = 47;
+            this.label9.Text = "Среднее время:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(680, 245);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(41, 13);
+            this.label12.TabIndex = 48;
+            this.label12.Text = "label12";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(44, 277);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(718, 223);
+            this.dataGridView1.TabIndex = 49;
+            // 
             // All_Result
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(815, 503);
+            this.ClientSize = new System.Drawing.Size(815, 560);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -196,6 +299,7 @@
             this.panel_1_sar.PerformLayout();
             this.panel_2_start.ResumeLayout(false);
             this.panel_2_start.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,5 +320,14 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

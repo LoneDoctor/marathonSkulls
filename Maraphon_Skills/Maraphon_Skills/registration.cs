@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
+
 namespace Maraphon_Skills
 {
     public partial class registration : Form
@@ -18,9 +20,10 @@ namespace Maraphon_Skills
         DateTime date = new DateTime(2018, 10, 30);
         public registration()
         {
-            InitializeComponent();
-            database = new SqlConnection(@"Data Source=LENOVO-PC\MSSQLSERVER01; Initial Catalog = ws; Integrated Security = True");
+            database = new SqlConnection(@"Data Source=LENOVO-PC\MSSQLSERVER01;Initial Catalog=ws;Integrated Security=True");
             database.Open();
+            InitializeComponent();
+
             openFileDialog1.Filter = "Image files (*.*)|*.*";
         }
 
@@ -57,7 +60,7 @@ namespace Maraphon_Skills
             if (openFileDialog1.ShowDialog() == DialogResult.Cancel)
                 return;
             string filename = openFileDialog1.FileName;
-             fileText = System.IO.File.ReadAllText(filename);
+            fileText = System.IO.File.ReadAllText(filename);
             textBox_name_photo.Text = fileText;
             pictureBox_runner_photo.ImageLocation = filename;
         }
@@ -82,7 +85,7 @@ namespace Maraphon_Skills
 
         private void textBox_repeatPassword_Click(object sender, EventArgs e)
         {
-            if (textBox_repeatPassword.Text == "Повторите пароль")
+            if (textBox_repeatPassword.Text == "Повторите пароль:")
             {
                 textBox_repeatPassword.Text = "";
                 textBox_repeatPassword.ForeColor = Color.Black;
@@ -109,104 +112,28 @@ namespace Maraphon_Skills
 
         private void registrat_Click(object sender, EventArgs e)
         {
-            if (textbox_email.Text != "E-Mail" && textBox_password.Text != "Пароль" && textBox_repeatPassword.Text != "Повторите пароль:" && textBox_name.Text != "Имя" && textBox_SecondName.Text != "Фамилия" && textBox_name_photo.Text != "")
-            {
-               
-                    if (textBox_password.Text.Length > 6)
-                    {
-                        char[] str = new char[textBox_password.Text.Length];
-                        for (int i = 0; i < textBox_password.Text.Length; i++)
-                        {
-                            str[i] = textBox_password.Text[i];
-                            if (Char.IsDigit(textBox_password.Text[i]))
-                            {
-                                a = 1;
-                            }
-                            if ((Char.IsUpper(textBox_password.Text[i])))
-                            {
-                                b = 1;
-                            }
-                            if ((Char.IsLower(textBox_password.Text[i])))
-                            {
-                                c = 1;
-                            }
-                           if (textBox_password.Text == textBox_repeatPassword.Text)
-                           {
-                            q = 1;
-                           }
+            string pattern = @"\b[A-Za-z0-9_%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b";
+            if (!Regex.IsMatch(textbox_email.Text, pattern, RegexOptions.IgnoreCase))
+                MessageBox.Show("перепроверьте имейл");
 
-                            if ((str[i] == '?') || (str[i] == '!') || (str[i] == '@') || (str[i] == '$'))
-                            {
-                                d = 1;
-                                if (a == 0)
-                                { textBox1.Text = textBox1.Text + "\n не хватает цифр"; }
-                                if (b == 0)
-                                { textBox1.Text = textBox1.Text + "\n не хватает заглавной буквы"; }
-                                if (c == 0)
-                                { textBox1.Text = textBox1.Text + "\n не хватает строчной буквы"; }
-                                if (d == 0)
-                                { textBox1.Text = textBox1.Text + " \n не хватает специальных символов: ?, !,@, $"; }
-                                if (q == 0)
-                                { textBox1.Text = textBox1.Text + "\n пароли не совпадают "; };
-                                if (a + b + c + d + q != 5)
-                                { MessageBox.Show(textBox1.Text);
-                                    textBox1.Text = "";
-                                }
-                                if (a + b + c + d + q == 5)
-                                {
-                               
-                                    SqlDataReader sqlData = null;
-                                    SqlCommand command = new SqlCommand("SELECT * FROM [User]", database);
-                                    sqlData = command.ExecuteReader(); //Компиляция
-                                    while (sqlData.Read()) // Чтение данных по запросу
-                                    {
-                                    sqlData.Close();
-                                    SqlCommand command1 = new SqlCommand("INSERT INTO user (Email, Password, FirstName, LastName, RoleId) VALUES (@email, @passw, @firstname, @secondName, @role)", database);
-                                        command1.Parameters.AddWithValue("email", textbox_email.Text);
-                                        command1.Parameters.AddWithValue("passw", textBox_password.Text);
-                                        command1.Parameters.AddWithValue("firstname", textBox_name.Text);
-                                        command1.Parameters.AddWithValue("secondName", textBox_SecondName.Text);
-                                        command1.Parameters.AddWithValue("role", "R");
-                                        command1.ExecuteNonQuery();
-                                    
-                                }
-                         
-                              //   SqlDataReader sqlData = null;
-                                SqlCommand command21 = new SqlCommand("SELECT * FROM [Runner]", database);
-                                    sqlData = command21.ExecuteReader(); //Компиляция
-                                    while (sqlData.Read()) // Чтение данных по запросу
-                                    {
-                                    sqlData.Close();
-                                    SqlCommand command2 = new SqlCommand("INSERT INTO Runner (Email,Gender,DateOfBirth, CountryCode,photo_runner) VALUES (@email, @gender, @DOB, @countryCo, @photo)", database);
-                                        command2.Parameters.AddWithValue("email", textbox_email.Text);
-                                        command2.Parameters.AddWithValue("gender", comboBox_Gender.Text);
-                                        command2.Parameters.AddWithValue("DOB", dateOfBirth.Value);
-                                        command2.Parameters.AddWithValue("countryCo", comboBox_Country.SelectedValue);
-                                        command2.Parameters.AddWithValue("photo", fileText);
-                                        command2.ExecuteNonQuery();
-                                   
-                                }
-                                }
-                            }
-                        }
-                    }
-                   
-              
-
-                
-                if (textbox_email.Text == "E-Mail")
-                { textbox_email.BackColor = Color.Red; }
-                if (textBox_password.Text == "Пароль")
-                { textBox_password.BackColor = Color.Red; }
-                if (textBox_repeatPassword.Text == "Повторите пароль:")
-                { textBox_repeatPassword.BackColor = Color.Red; }
-                if (textBox_name.Text == "Имя")
-                { textBox_name.BackColor = Color.Red; }
-                if (textBox_SecondName.Text == "Фамилия")
-                { textBox_SecondName.BackColor = Color.Red; }
-            }
+            /*if (!(Regex.IsMatch(textBox_password.Text, "[A-Z]") && Regex.IsMatch(textBox_password.Text, "[a-z]") && Regex.IsMatch(textBox_password.Text, "[0-9]")
+                && Regex.IsMatch(textBox_password.Text, "[!,@,#,$,%]") && textBox_password.TextLength >= 6 /*&& ИМЕНА ПОЛЕЙ == ""))
+                MessageBox.Show("Перепроверь данные!");
             else
-                MessageBox.Show("Вы не заполнили все нужные поля.");
+            {
+                MessageBox.Show("anjksd");
+
+                pictureBox_runner_photo.Image.Save(@"C:\Users\lenovo\Desktop\программа марафон\Photos/" + textbox_email.Text + ".png");
+
+                SqlCommand com2 = new SqlCommand(@"INSERT INTO [dbo].[User] (Email, Password, FirstName, LastName, RoleId)
+                Values ('" + textbox_email.Text + "', '" + textBox_password.Text + "', '" + textBox_name.Text + "', '" + textBox_SecondName.Text + "', 'R')", database);
+                com2.ExecuteNonQuery();
+
+                SqlCommand com1 = new SqlCommand(@"INSERT INTO Runner (Email, Gender, DateOfBirth, CountryCode, photo_runner) 
+                Values ('" + textbox_email.Text + "', '" + comboBox_Gender.Text + "', '" + dateOfBirth.Value + "', '" + comboBox_Country.SelectedValue + "', '" + textbox_email.Text + ".png" + "')", database);
+                com1.ExecuteNonQuery();
+            }*/
         }
     }
 }
+

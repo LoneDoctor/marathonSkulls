@@ -39,6 +39,7 @@
             this.button_wanna_now = new System.Windows.Forms.Button();
             this.timer_date = new System.Windows.Forms.Timer(this.components);
             this.login = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel_2_start.SuspendLayout();
             this.panel_1_start.SuspendLayout();
             this.SuspendLayout();
@@ -67,6 +68,7 @@
             // panel_1_start
             // 
             this.panel_1_start.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel_1_start.Controls.Add(this.label1);
             this.panel_1_start.Controls.Add(this.Welcome);
             this.panel_1_start.Controls.Add(this.Location_date_now);
             this.panel_1_start.Dock = System.Windows.Forms.DockStyle.Top;
@@ -97,7 +99,7 @@
             this.Location_date_now.Multiline = true;
             this.Location_date_now.Name = "Location_date_now";
             this.Location_date_now.ReadOnly = true;
-            this.Location_date_now.Size = new System.Drawing.Size(717, 83);
+            this.Location_date_now.Size = new System.Drawing.Size(717, 34);
             this.Location_date_now.TabIndex = 1;
             this.Location_date_now.Text = "Москва, Россия,\r\n ";
             this.Location_date_now.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -157,6 +159,15 @@
             this.login.UseVisualStyleBackColor = true;
             this.login.Click += new System.EventHandler(this.login_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(709, 193);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "label1";
+            // 
             // Start_m
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -195,6 +206,7 @@
         private System.Windows.Forms.Button login;
         private System.Windows.Forms.Label time_to_start;
         private System.Windows.Forms.Label Welcome;
+        private System.Windows.Forms.Label label1;
     }
 }
 

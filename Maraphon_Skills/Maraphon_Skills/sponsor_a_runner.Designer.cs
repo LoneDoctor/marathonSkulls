@@ -398,7 +398,7 @@
             this.panel1.Controls.Add(this.fond_information);
             this.panel1.Controls.Add(this.fond_name);
             this.panel1.Controls.Add(this.fond_label);
-            this.panel1.Location = new System.Drawing.Point(455, 175);
+            this.panel1.Location = new System.Drawing.Point(392, 189);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(590, 432);
             this.panel1.TabIndex = 25;

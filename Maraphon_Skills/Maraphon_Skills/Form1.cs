@@ -1,16 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Maraphon_Skills
 {
-    
+
     public partial class Start_m : Form
     {
     
@@ -19,7 +13,8 @@ namespace Maraphon_Skills
             
         {
             InitializeComponent();
-            
+            System.Globalization.CultureInfo info = new System.Globalization.CultureInfo("ru-RU");
+            label1.Text = info.DateTimeFormat.GetDayName(DateTime.Now.DayOfWeek) + DateTime.Now.ToString("dd MMMM yyyy"); 
         }
         /// <summary>
         /// Загрузка формы,при которой происходит задание нужных, несистемных оттенков
@@ -37,7 +32,7 @@ namespace Maraphon_Skills
             time_to_start.Text = "";
             DateTime date_now = new DateTime();
             date_now = DateTime.Now;
-            time_to_start.Text = (date - date_now).Days + " дней " + (date - date_now).Hours + " часов " + (date - date_now).Minutes + " минут " + " до старта марафона!";
+            time_to_start.Text = (date - date_now).Days + " дней " + (date - date_now).Hours + " часов " + (date - date_now).Minutes + " минут до старта марафона!";
         }
         /// <summary>
         /// Обратный отсчет
@@ -50,7 +45,7 @@ namespace Maraphon_Skills
             time_to_start.Text = "";
             DateTime date_now = new DateTime();
             date_now = DateTime.Now;
-            time_to_start.Text =   (date - date_now).Days + " дней " +  (date - date_now).Hours + " часов " + (date - date_now).Minutes+ " минут " + " до старта марафона!";
+            time_to_start.Text =   (date - date_now).Days + " дней " +  (date - date_now).Hours + " часов " + (date - date_now).Minutes+ " минут до старта марафона!";
         }
         /// <summary>
         /// Кнопка для перехода на страницу "Я хочу стать спонсором"
