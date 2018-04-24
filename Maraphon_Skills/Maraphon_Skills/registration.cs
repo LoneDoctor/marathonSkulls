@@ -15,7 +15,6 @@ namespace Maraphon_Skills
     public partial class registration : Form
     {
         SqlConnection database;
-        int a, b, c, d, q;
         string fileText;
         DateTime date = new DateTime(2018, 10, 30);
         public registration()
@@ -116,8 +115,8 @@ namespace Maraphon_Skills
             if (!Regex.IsMatch(textbox_email.Text, pattern, RegexOptions.IgnoreCase))
                 MessageBox.Show("перепроверьте имейл");
 
-            /*if (!(Regex.IsMatch(textBox_password.Text, "[A-Z]") && Regex.IsMatch(textBox_password.Text, "[a-z]") && Regex.IsMatch(textBox_password.Text, "[0-9]")
-                && Regex.IsMatch(textBox_password.Text, "[!,@,#,$,%]") && textBox_password.TextLength >= 6 /*&& ИМЕНА ПОЛЕЙ == ""))
+            if (!(Regex.IsMatch(textBox_password.Text, "[A-Z]") && Regex.IsMatch(textBox_password.Text, "[a-z]") && Regex.IsMatch(textBox_password.Text, "[0-9]")
+                && Regex.IsMatch(textBox_password.Text, "[!,@,#,$,%]") && textBox_password.TextLength >= 6 && textbox_email.Text == ""))
                 MessageBox.Show("Перепроверь данные!");
             else
             {
@@ -132,7 +131,7 @@ namespace Maraphon_Skills
                 SqlCommand com1 = new SqlCommand(@"INSERT INTO Runner (Email, Gender, DateOfBirth, CountryCode, photo_runner) 
                 Values ('" + textbox_email.Text + "', '" + comboBox_Gender.Text + "', '" + dateOfBirth.Value + "', '" + comboBox_Country.SelectedValue + "', '" + textbox_email.Text + ".png" + "')", database);
                 com1.ExecuteNonQuery();
-            }*/
+            }
         }
     }
 }

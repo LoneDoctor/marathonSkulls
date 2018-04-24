@@ -39,19 +39,19 @@
             this.label_all_vol = new System.Windows.Forms.Label();
             this.label_number_vol = new System.Windows.Forms.Label();
             this.dataGridView_volounteres = new System.Windows.Forms.DataGridView();
-            this.wsDataSet = new Maraphon_Skills.wsDataSet();
-            this.wsDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.volunteerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.volunteerTableAdapter = new Maraphon_Skills.wsDataSetTableAdapters.VolunteerTableAdapter();
-            this.volunteerBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.countryCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.genderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.volunteerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.wsDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.wsDataSet = new Maraphon_Skills.wsDataSet();
+            this.volunteerTableAdapter = new Maraphon_Skills.wsDataSetTableAdapters.VolunteerTableAdapter();
+            this.volunteerBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_volounteres)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wsDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wsDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.volunteerBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wsDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wsDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.volunteerBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,7 +61,7 @@
             this.label_manage_vol.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_manage_vol.Location = new System.Drawing.Point(506, 56);
             this.label_manage_vol.Name = "label_manage_vol";
-            this.label_manage_vol.Size = new System.Drawing.Size(428, 39);
+            this.label_manage_vol.Size = new System.Drawing.Size(412, 38);
             this.label_manage_vol.TabIndex = 0;
             this.label_manage_vol.Text = "Управление волонтерами";
             // 
@@ -90,6 +90,11 @@
             this.comboBox_sort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_sort.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox_sort.FormattingEnabled = true;
+            this.comboBox_sort.Items.AddRange(new object[] {
+            "Имени",
+            "Фамилии",
+            "Стране",
+            "Полу"});
             this.comboBox_sort.Location = new System.Drawing.Point(317, 219);
             this.comboBox_sort.Name = "comboBox_sort";
             this.comboBox_sort.Size = new System.Drawing.Size(236, 39);
@@ -126,6 +131,7 @@
             this.button_upload.TabIndex = 6;
             this.button_upload.Text = "Загрузка волонтеров";
             this.button_upload.UseVisualStyleBackColor = true;
+            this.button_upload.Click += new System.EventHandler(this.button_upload_Click);
             // 
             // label_all_vol
             // 
@@ -160,32 +166,8 @@
             this.dataGridView_volounteres.Location = new System.Drawing.Point(491, 427);
             this.dataGridView_volounteres.Name = "dataGridView_volounteres";
             this.dataGridView_volounteres.RowTemplate.Height = 24;
-            this.dataGridView_volounteres.Size = new System.Drawing.Size(443, 291);
+            this.dataGridView_volounteres.Size = new System.Drawing.Size(544, 291);
             this.dataGridView_volounteres.TabIndex = 9;
-            // 
-            // wsDataSet
-            // 
-            this.wsDataSet.DataSetName = "wsDataSet";
-            this.wsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // wsDataSetBindingSource
-            // 
-            this.wsDataSetBindingSource.DataSource = this.wsDataSet;
-            this.wsDataSetBindingSource.Position = 0;
-            // 
-            // volunteerBindingSource
-            // 
-            this.volunteerBindingSource.DataMember = "Volunteer";
-            this.volunteerBindingSource.DataSource = this.wsDataSetBindingSource;
-            // 
-            // volunteerTableAdapter
-            // 
-            this.volunteerTableAdapter.ClearBeforeFill = true;
-            // 
-            // volunteerBindingSource1
-            // 
-            this.volunteerBindingSource1.DataMember = "Volunteer";
-            this.volunteerBindingSource1.DataSource = this.wsDataSetBindingSource;
             // 
             // firstNameDataGridViewTextBoxColumn
             // 
@@ -211,6 +193,30 @@
             this.genderDataGridViewTextBoxColumn.HeaderText = "Пол";
             this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
             // 
+            // volunteerBindingSource
+            // 
+            this.volunteerBindingSource.DataMember = "Volunteer";
+            this.volunteerBindingSource.DataSource = this.wsDataSetBindingSource;
+            // 
+            // wsDataSetBindingSource
+            // 
+            this.wsDataSetBindingSource.DataSource = this.wsDataSet;
+            this.wsDataSetBindingSource.Position = 0;
+            // 
+            // wsDataSet
+            // 
+            this.wsDataSet.DataSetName = "wsDataSet";
+            this.wsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // volunteerTableAdapter
+            // 
+            this.volunteerTableAdapter.ClearBeforeFill = true;
+            // 
+            // volunteerBindingSource1
+            // 
+            this.volunteerBindingSource1.DataMember = "Volunteer";
+            this.volunteerBindingSource1.DataSource = this.wsDataSetBindingSource;
+            // 
             // management_volounteres
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -230,9 +236,9 @@
             this.Text = "management_volounteres";
             this.Load += new System.EventHandler(this.management_volounteres_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_volounteres)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wsDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wsDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.volunteerBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wsDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wsDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.volunteerBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

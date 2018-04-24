@@ -17,6 +17,23 @@ namespace Maraphon_Skills
         {
             
             InitializeComponent();
+            panel_1_sar.BackColor = Color.FromArgb(81, 81, 81);
+            panel_2_sar.BackColor = Color.FromArgb(81, 81, 81);
+            SqlConnection database;
+            SqlDataReader sqlread;
+            int z = 0;
+            database = new SqlConnection(@"Data Source=LENOVO-PC\MSSQLSERVER01; Initial Catalog = ws; Integrated Security = True");
+            database.Open();
+            SqlCommand data = new SqlCommand("Select * from Charity", database);
+            sqlread = data.ExecuteReader();
+            while (sqlread.Read())
+            {
+                dataGridView_list_organization.Rows.Add();
+                dataGridView_list_organization.Rows[z].Cells[0].Value = Image.FromFile(Application.StartupPath + @"\Изображения\" + sqlread["CharityLogo"]);
+                dataGridView_list_organization.Rows[z].Cells[1].Value = sqlread["CharityName"].ToString();
+                dataGridView_list_organization.Rows[z].Cells[2].Value = sqlread["CharityDescription"].ToString();
+                z++;
+            }
         }
         /// <summary>
         /// Возвращение на стартовое окно
@@ -36,34 +53,7 @@ namespace Maraphon_Skills
         /// <param name="e"></param>
         private void organization_list_Load(object sender, EventArgs e)
         {
-            panel_1_sar.BackColor = Color.FromArgb(81, 81, 81);
-            panel_2_sar.BackColor = Color.FromArgb(81, 81, 81);     
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "wsDataSet.Charity". При необходимости она может быть перемещена или удалена.
-            this.charityTableAdapter.Fill(this.wsDataSet.Charity);
-            SqlConnection database;
-            database = new SqlConnection(@"Data Source=LENOVO-PC\MSSQLSERVER01; Initial Catalog = ws; Integrated Security = True");
-            database.Open();
-            SqlDataAdapter data = new SqlDataAdapter("Select * from Charity", database);
-            wsDataSet ds = new wsDataSet();
-            data.Fill(ds, "Charity");
-            dataGridView_list_organization.DataSource = ds;
-            dataGridView_list_organization.DataMember = "Charity";
-            for (int j = 0; j < dataGridView_list_organization.RowCount - 1; j++)
-            {
-                string a = Application.StartupPath + @"\Изображения\" + dataGridView_list_organization[4, j].Value;
-
-                Bitmap img = new Bitmap(a);
-              //  dataGridView_list_organization[0, j].Value = img;
-
-                dataGridView_list_organization.Columns[0].Width = 60;
-                dataGridView_list_organization.Rows[j].Height = 60;
-                database.Close();
-            }
-            dataGridView_list_organization.Columns[4].Visible = false;
-            dataGridView_list_organization.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
-            dataGridView_list_organization.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCellsExceptHeader;
-            dataGridView_list_organization.Columns[1].Visible = false;
-
+            
         }
 
         private void dataGridView_list_organization_CellContentClick(object sender, DataGridViewCellEventArgs e)

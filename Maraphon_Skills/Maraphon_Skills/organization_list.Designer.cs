@@ -42,10 +42,8 @@
             this.charityTableAdapter = new Maraphon_Skills.wsDataSetTableAdapters.CharityTableAdapter();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Column2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.charityIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.charityNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.charityDescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.charityLogoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel_1_sar.SuspendLayout();
             this.panel_2_sar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_list_organization)).BeginInit();
@@ -112,15 +110,11 @@
             // 
             this.dataGridView_list_organization.AllowUserToResizeColumns = false;
             this.dataGridView_list_organization.AllowUserToResizeRows = false;
-            this.dataGridView_list_organization.AutoGenerateColumns = false;
             this.dataGridView_list_organization.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_list_organization.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column2,
-            this.charityIdDataGridViewTextBoxColumn,
-            this.charityNameDataGridViewTextBoxColumn,
-            this.charityDescriptionDataGridViewTextBoxColumn,
-            this.charityLogoDataGridViewTextBoxColumn});
-            this.dataGridView_list_organization.DataSource = this.charityBindingSource;
+            this.Column3,
+            this.Column4});
             this.dataGridView_list_organization.Location = new System.Drawing.Point(50, 252);
             this.dataGridView_list_organization.Name = "dataGridView_list_organization";
             this.dataGridView_list_organization.RowTemplate.Height = 24;
@@ -175,33 +169,22 @@
             // 
             this.Column2.DataPropertyName = "CharityId";
             this.Column2.HeaderText = "Column2";
+            this.Column2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
+            this.Column2.Width = 69;
             // 
-            // charityIdDataGridViewTextBoxColumn
+            // Column3
             // 
-            this.charityIdDataGridViewTextBoxColumn.DataPropertyName = "CharityId";
-            this.charityIdDataGridViewTextBoxColumn.HeaderText = "CharityId";
-            this.charityIdDataGridViewTextBoxColumn.Name = "charityIdDataGridViewTextBoxColumn";
-            this.charityIdDataGridViewTextBoxColumn.ReadOnly = true;
+            this.Column3.HeaderText = "Column3";
+            this.Column3.Name = "Column3";
             // 
-            // charityNameDataGridViewTextBoxColumn
+            // Column4
             // 
-            this.charityNameDataGridViewTextBoxColumn.DataPropertyName = "CharityName";
-            this.charityNameDataGridViewTextBoxColumn.HeaderText = "CharityName";
-            this.charityNameDataGridViewTextBoxColumn.Name = "charityNameDataGridViewTextBoxColumn";
-            // 
-            // charityDescriptionDataGridViewTextBoxColumn
-            // 
-            this.charityDescriptionDataGridViewTextBoxColumn.DataPropertyName = "CharityDescription";
-            this.charityDescriptionDataGridViewTextBoxColumn.HeaderText = "CharityDescription";
-            this.charityDescriptionDataGridViewTextBoxColumn.Name = "charityDescriptionDataGridViewTextBoxColumn";
-            // 
-            // charityLogoDataGridViewTextBoxColumn
-            // 
-            this.charityLogoDataGridViewTextBoxColumn.DataPropertyName = "CharityLogo";
-            this.charityLogoDataGridViewTextBoxColumn.HeaderText = "CharityLogo";
-            this.charityLogoDataGridViewTextBoxColumn.Name = "charityLogoDataGridViewTextBoxColumn";
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column4.HeaderText = "Column4";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 92;
             // 
             // organization_list
             // 
@@ -243,9 +226,7 @@
         private wsDataSetTableAdapters.CharityTableAdapter charityTableAdapter;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.DataGridViewImageColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn charityIdDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn charityNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn charityDescriptionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn charityLogoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }
 }

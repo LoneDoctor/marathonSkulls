@@ -31,7 +31,32 @@ namespace Maraphon_Skills
 
         private void comboBox_sort_SelectedIndexChanged(object sender, EventArgs e)
         {
-           dataGridView_volounteres.Sort(dataGridView_volounteres.Columns[1], ListSortDirection.Ascending);
+            if (comboBox_sort.Text == "Имени")
+            {
+                dataGridView_volounteres.Sort(dataGridView_volounteres.Columns[1], ListSortDirection.Ascending);
+            }
+
+            if (comboBox_sort.Text == "Фамилии")
+            {
+                dataGridView_volounteres.Sort(dataGridView_volounteres.Columns[2], ListSortDirection.Ascending);
+            }
+
+            if (comboBox_sort.Text == "Стране")
+            {
+                dataGridView_volounteres.Sort(dataGridView_volounteres.Columns[3], ListSortDirection.Ascending);
+            }
+
+            if (comboBox_sort.Text == "Полу")
+            {
+                dataGridView_volounteres.Sort(dataGridView_volounteres.Columns[4], ListSortDirection.Ascending);
+            }
+        }
+
+        private void button_upload_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            upload_volunters uv = new upload_volunters();
+            uv.Show();
         }
     }
 }

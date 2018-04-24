@@ -29,3 +29,4 @@ C:\Users\lenovo\Desktop\программа марафон\Maraphon_Skills\Maraph
 C:\Users\lenovo\Desktop\программа марафон\Maraphon_Skills\Maraphon_Skills\obj\Debug\Maraphon_Skills.My_Result.resources
 C:\Users\lenovo\Desktop\программа марафон\Maraphon_Skills\Maraphon_Skills\obj\Debug\Maraphon_Skills.management_volounteres.resources
 C:\Users\lenovo\Desktop\программа марафон\Maraphon_Skills\Maraphon_Skills\obj\Debug\Maraphon_Skills.registration_marathon.resources
+C:\Users\lenovo\Desktop\программа марафон\Maraphon_Skills\Maraphon_Skills\obj\Debug\Maraphon_Skills.upload_volunters.resources

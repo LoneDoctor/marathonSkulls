@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Maraphon_Skills
 {
-    public partial class All_Result : Form
+    public partial class my_sponsorship : Form
     {
-        public All_Result()
+        public my_sponsorship()
         {
             InitializeComponent();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }
